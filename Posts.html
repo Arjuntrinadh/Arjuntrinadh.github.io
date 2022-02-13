@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/Posts.css">
+    <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="header">
+        <a href="#default" class="logo"><Img src="./assets/AppLogo_2.png" class="logoImage" width="42" height="51" />
+            <p class="logoName">Jntuk App</p>
+        </a>
+        <div class="header-right">
+            <a  href="Home.html">Home</a>
+            <a href="Feedbacks.html">Feedbacks</a>
+            <a class="active" href="#post">Post</a>
+            <a href="circulars.html">Circulars</a>
+            <a  href="Profile.html">Profile</a>
+            <a href="index.html">Logout</a>
+        </div>
+    </div>
+    <div class="card_2">
+        <p>
+            Upload new post
+        </p>
+        <textarea placeholder="Enter text for your post from here . . ." rows="20" name="comment[text]" id="comment_text" cols="40" class="ui-autocomplete-input" autocomplete="off" role="textbox" aria-autocomplete="list" aria-haspopup="true"></textarea>
+        <div class="file-upload">
+           
+            <div class="image-upload-wrap">
+              <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
+              <div class="drag-text">
+                <h3>Drag and drop a file or select add Image</h3>
+              </div>
+            </div>
+            <div class="file-upload-content">
+              <img class="file-upload-image" src="#" alt="your image" />
+              <div class="image-title-wrap">
+                <button type="button" onclick="removeUpload()" class="remove-image">Remove <span class="image-title">Uploaded Image</span></button>
+              </div>
+            </div>
+            <button class="file-upload-btn" type="button" onclick="$('.file-upload-input').trigger( 'click' )">Add Image</button>
+            <button class="button-7" role="button">Upload Post</button>
+          </div>
+    </div>
+    <div class="card_2">
+        <p>
+            Posts uploaded by you
+        </p>
+        <div class="card">
+            <div class="card-banner">
+              <img class="banner-img" src='https://dighumlab.org/wp-content/uploads/2019/08/banner-tutorial-ai-nov-2019-1200x630-3.jpg' style="width: 100%;height:300px;" alt=''>
+            </div>
+            <p class="card-desc">Descrption of the post</p>
+            <p class="card-views">790 views</p>
+              <button class="button-7" role="button">Delete Post</button>
+        </div> 
+        <div class="card">
+            <div class="card-banner">
+              <img class="banner-img" src='https://clustercollaboration.eu/sites/default/files/WYSIWYG_uploads/5e_workshop_banner_linkedin.jpg' style="width: 100%;height:300px;" alt=''>
+            </div>
+            <p class="card-desc">Descrption of the post</p>
+            <p class="card-views">10 views</p>
+              <button class="button-7" role="button">Delete Post</button>
+        </div> 
+    </div>
+
+    <script src="./js/Posts.js"></script>
+</body>
+</html>
