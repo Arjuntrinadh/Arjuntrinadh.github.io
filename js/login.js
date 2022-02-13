@@ -1,3 +1,3 @@
 function onLogin(){
-    window.location.href="Home.html"; 
+    window.location.href="home.html"; 
 }
